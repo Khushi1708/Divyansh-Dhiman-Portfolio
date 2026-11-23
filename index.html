@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divyansh Dhiman – Social entrepreneur and builder of ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--card:rgba(255,255,255,.75);--ink:#0e1424;--muted:#55627d;--line:#d3dae8;--accent:#0a8c64;--ai:#fff;--rgb:10,140,100;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#080d1a;--card:rgba(15,23,42,.7);--ink:#e6ebf5;--muted:#8a95ad;--line:#1f2a44;--accent:#34d9a3;--ai:#06231a;--rgb:52,217,163;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#080d1a;--card:rgba(15,23,42,.7);--ink:#e6ebf5;--muted:#8a95ad;--line:#1f2a44;--accent:#34d9a3;--ai:#06231a;--rgb:52,217,163;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;line-height:1;margin:0;letter-spacing:-.01em}
+a{color:inherit}.mono{font:500 .72rem/1.4 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+#bg{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.gridbg{position:fixed;inset:0;z-index:-2;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:60px 60px;opacity:.5;-webkit-mask-image:radial-gradient(ellipse at 50% 20%,#000,transparent 72%);mask-image:radial-gradient(ellipse at 50% 20%,#000,transparent 72%)}
+.aurora{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+.aurora i{position:absolute;width:44vmax;height:44vmax;border-radius:50%;filter:blur(110px);opacity:.22;background:var(--accent);animation:drift 24s ease-in-out infinite alternate}
+.aurora i:nth-child(1){top:-16vmax;left:-12vmax}.aurora i:nth-child(2){bottom:-22vmax;right:-12vmax;background:#5b6dff;opacity:.2;animation-duration:31s}
+@keyframes drift{to{transform:translate(12vmax,9vmax) scale(1.25)}}
+.spot{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(520px circle at var(--mx,50%) var(--my,30%),rgba(var(--rgb),.1),transparent 62%)}
+.curtain{position:fixed;inset:0;z-index:50;background:var(--bg);opacity:0;pointer-events:none}
+.curtain::after{content:"";position:absolute;left:0;top:env(safe-area-inset-top,0px);height:2px;width:100%;background:linear-gradient(90deg,transparent,var(--accent),transparent);transform:scaleX(0);transform-origin:left;opacity:.9}
+.curtain.in{opacity:1;transition:opacity .22s ease-out}.curtain.in::after{transform:scaleX(1);transition:transform .3s ease-out}
+.curtain.out{opacity:0;transition:opacity .3s ease-in .05s}.curtain.out::after{transform:scaleX(1) translateX(100%);transition:transform .3s ease-in}
+
+
+
+.logo{position:fixed;left:1.5rem;top:calc(env(safe-area-inset-top,0px) + 20px);z-index:20;font:500 1.4rem "JetBrains Mono",monospace;text-decoration:none}.logo b{color:var(--accent)}
+.tog{position:fixed;right:1.5rem;top:calc(env(safe-area-inset-top,0px) + 16px);z-index:20;font:inherit;cursor:pointer;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem}
+.pn{position:fixed;top:calc(env(safe-area-inset-top,0px) + 14px);left:50%;transform:translateX(-50%);z-index:20;display:flex;gap:.15rem;padding:.35rem;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);max-width:calc(100vw - 1rem);overflow-x:auto}
+.pn a{padding:.5rem .9rem;border-radius:999px;text-decoration:none;color:var(--muted);white-space:nowrap}.pn a:hover{color:var(--ink)}
+.pn a[aria-current="page"]{background:rgba(var(--rgb),.16);color:var(--accent)}
+main{max-width:1120px;margin:auto;padding:8rem 1.5rem 3rem}
+.sec{margin-top:7rem}
+.sh{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:1.5rem;margin-bottom:2.5rem}
+.sh .mono{color:var(--muted);width:100%}.sh h2{font-size:clamp(2.4rem,6vw,4.4rem)}
+.lk{color:var(--accent);text-decoration:none}
+.hero{position:relative;min-height:70vh;display:flex;flex-direction:column;justify-content:center;text-align:center;align-items:center;padding:2rem 0}
+.hero .mono{color:var(--muted)}
+.hero h1{font-size:clamp(3.6rem,15vw,10.5rem);text-transform:uppercase;line-height:.85;margin:1.5rem 0}
+.hero h1>span{display:block}.hero h1>span+span{color:var(--muted)}
+.hero .dot{display:inline-block;width:.1em;height:.1em;border-radius:50%;background:var(--accent);box-shadow:0 0 22px var(--accent);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.7);opacity:.6}}
+.lede{max-width:34rem;color:var(--muted);font-size:1.15rem;margin:0 auto 2rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:6px;background:var(--accent);color:var(--ai);text-decoration:none;font-weight:500;border:1px solid var(--accent);transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.side{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;width:100%;margin-top:3rem;color:var(--muted);text-align:left}
+.side ul{list-style:none;margin:.4rem 0 0;padding:0;font-size:.9rem}
+.ch{display:inline-block;overflow:hidden;vertical-align:top;line-height:.9;padding-bottom:.12em;margin-bottom:-.12em}
+.ch>b{display:inline-block;font-weight:inherit;transform:translateY(112%) rotate(5deg);animation:up .95s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--i)*55ms + 200ms)}
+@keyframes up{to{transform:none}}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.two h3{font-size:clamp(2.4rem,5vw,4rem)}.two h3 em{color:var(--muted)}
+.two p{color:var(--muted);margin:0 0 1rem}
+.code{border-left:1px solid var(--line);padding:.4rem 0 .4rem 1.2rem;margin:1.5rem 0;font:400 .85rem "JetBrains Mono",monospace;color:var(--accent)}.code small{display:block;color:var(--muted)}
+.mq{overflow:hidden;border-block:1px solid var(--line);padding:1.1rem 0;margin-top:4rem;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq>div{display:flex;width:max-content;animation:mq 32s linear infinite}.mq:hover>div{animation-play-state:paused}
+.mq span{padding-right:3rem;white-space:nowrap;font:italic 400 clamp(1.6rem,4vw,2.6rem) "Instrument Serif",serif;color:var(--muted)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem}
+.card{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:12px;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transform-style:preserve-3d;will-change:transform}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(280px circle at var(--gx,50%) var(--gy,0%),rgba(var(--rgb),.12),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}.card:hover::after{opacity:1}
+.art{height:170px;display:grid;place-items:center;border-bottom:1px solid var(--line);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:24px 24px;position:relative}
+.art svg{width:76px;height:76px;stroke:var(--accent);fill:none;stroke-width:2.4;filter:drop-shadow(0 0 10px rgba(var(--rgb),.6));animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.art .mono{position:absolute;bottom:.8rem;color:var(--muted)}
+.cb{padding:1.6rem;display:grid;gap:.8rem}.cb h3{font:500 1.45rem "JetBrains Mono",monospace;letter-spacing:-.02em}.cb h3 b{color:var(--accent)}.cb p{margin:0;color:var(--muted);font-size:.95rem}
+.tags{display:flex;gap:.45rem;flex-wrap:wrap}.tags span{font-size:.78rem;padding:.12rem .6rem;border-radius:5px;border:1px solid var(--line);color:var(--accent);font-family:"JetBrains Mono",monospace}
+.how{justify-self:start;font:inherit;cursor:pointer;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:6px;padding:.5rem 1rem}
+.how[aria-expanded="true"]{background:var(--accent);color:var(--ai);border-color:var(--accent)}
+.flow{display:none;gap:1rem;margin-top:.4rem;padding-top:1.2rem;border-top:1px dashed var(--line)}.card.open .flow{display:grid}
+.step{display:flex;gap:.9rem;opacity:0;transform:translateX(-14px);animation:in .5s forwards;animation-delay:calc(var(--i)*.35s)}
+.step::before{content:attr(data-n);flex:none;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--accent);color:var(--ai);font:500 .8rem/1.8rem "JetBrains Mono",monospace;text-align:center;animation:ping 2s infinite;animation-delay:calc(var(--i)*.35s + .5s)}
+.step b{display:block;font-weight:500}.step span{color:var(--muted);font-size:.92rem}
+@keyframes in{to{opacity:1;transform:none}}@keyframes ping{0%{box-shadow:0 0 0 0 rgba(var(--rgb),.55)}70%,100%{box-shadow:0 0 0 10px rgba(var(--rgb),0)}}
+.post{display:grid;grid-template-columns:3rem 1fr auto;gap:1.2rem;padding:1.8rem 0;border-bottom:1px solid var(--line)}
+.post .mono{color:var(--muted)}.post h3{font-size:clamp(1.8rem,4vw,2.6rem);margin:.5rem 0}.post p{margin:0;color:var(--muted);max-width:40rem}.post .r{text-align:right;color:var(--muted)}
+.prose{max-width:42rem}.prose p{color:var(--muted);margin:0 0 1.2rem;font-size:1.08rem}
+.nl{text-align:center;max-width:36rem;margin:2rem auto;display:grid;gap:1.2rem;justify-items:center}
+.nl h2{font-size:clamp(2.8rem,8vw,5rem)}.nl h2 span{color:var(--muted);display:block}
+.nl .ic{width:64px;height:64px;border:1px solid var(--accent);border-radius:12px;display:grid;place-items:center;color:var(--accent);font:500 1.4rem "JetBrains Mono",monospace;background:rgba(var(--rgb),.08)}
+.nl .row{display:flex;gap:.6rem;width:100%;border:1px solid var(--line);border-radius:8px;padding:.5rem;background:var(--card)}
+.nl input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:400 .9rem "JetBrains Mono",monospace;padding:.5rem}.nl input:focus{outline:none}
+.cta{padding:4rem 1.5rem;text-align:center;border:1px solid var(--line);border-radius:12px;background:var(--card)}.cta h2{font-size:clamp(2.4rem,6vw,4rem);margin-bottom:1.5rem}
+.top{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);margin-bottom:1rem}
+.wt{font-size:clamp(3rem,10vw,7.5rem);line-height:.92}.wt span{display:block;color:var(--muted)}
+.sr{display:flex;align-items:center;max-width:620px;margin-top:3.5rem;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.sr input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:400 .85rem "JetBrains Mono",monospace;padding:1.1rem 1.2rem}.sr input:focus{outline:none}.sr:focus-within{border-color:var(--accent)}
+.chips{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.4rem 0 2rem}
+.chip{font:400 .8rem "JetBrains Mono",monospace;cursor:pointer;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:6px;padding:.55rem .9rem}
+.chip[aria-pressed="true"]{color:var(--accent);border-color:var(--accent);background:rgba(var(--rgb),.1)}
+.cnt{color:var(--muted);padding-bottom:1rem;border-bottom:1px solid var(--line);margin:0}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:3rem}.topbar .chips{margin:0}.cnt2{color:var(--muted)}
+.vr{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:start;padding:4rem 0;border-top:1px solid var(--line);margin-top:3rem}
+.vl{display:grid;gap:1rem}.vl .mono{color:var(--muted)}.vl p{margin:0;color:var(--muted)}.vl p.vline{color:var(--ink);font-size:1.15rem}
+.vt{font:500 clamp(2.2rem,5vw,4rem) "JetBrains Mono",monospace;letter-spacing:-.04em;line-height:1;margin:0;overflow-wrap:anywhere}.vt b{color:var(--accent);font-weight:500}
+.vact{display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+.vr.open .flow{display:grid}
+.code2{border:1px solid var(--line);border-radius:10px;background:var(--card);overflow:hidden;position:sticky;top:6rem}
+.cbar{display:flex;align-items:center;gap:.8rem;padding:.8rem 1rem;border-bottom:1px solid var(--line);color:var(--muted)}.cbar .mono{flex:1;text-transform:none;letter-spacing:.03em}
+.dots{display:flex;gap:.35rem}.dots i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+.cp{cursor:pointer;background:transparent;border:0;color:var(--muted);text-transform:none}.cp:hover{color:var(--accent)}
+.cbody{padding:1.2rem 0;overflow-x:auto;font:400 .82rem/1.9 "JetBrains Mono",monospace}
+.ln{display:flex;gap:1.2rem;padding:0 1.2rem;white-space:pre}.ln i{color:var(--muted);font-style:normal;width:1.2rem;text-align:right;flex:none;opacity:.6}
+.conv{display:flex;align-items:center;gap:1.2rem;border-top:1px solid var(--line);padding:2.5rem 0 1rem;flex-wrap:wrap}.conv svg{width:34px;height:34px;stroke:var(--accent);fill:none;stroke-width:2}.conv h3{font:500 1.35rem Inter,sans-serif}.conv p{margin:.2rem 0 0;color:var(--muted);font-size:.95rem}.conv>div{flex:1;min-width:240px}
+.note{color:var(--muted);text-transform:none;letter-spacing:.03em;margin:1.5rem 0 0}
+@media (max-width:860px){.vr{grid-template-columns:1fr;gap:2rem}.code2{position:static}}
+.ab{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;align-items:start;margin-top:4rem;border-top:1px solid var(--line);padding-top:3.5rem}
+.fig{margin:0}.fig svg{width:100%;height:auto;border:1px solid var(--line);border-radius:6px;display:block}.fig figcaption{display:flex;justify-content:space-between;gap:1rem;margin-top:.8rem;color:var(--muted);text-transform:none;letter-spacing:.03em}
+.abt{display:grid;gap:1.1rem}.abt .mono{color:var(--muted)}.abt h2{font-size:clamp(2.6rem,6vw,4.6rem)}.abt p{margin:0;color:var(--muted)}.abt p.big{color:var(--ink);font-size:1.35rem;line-height:1.5}
+.hw{font-size:clamp(2.6rem,6vw,4.6rem);margin:.8rem 0 2rem}
+.prin>div{display:grid;grid-template-columns:3rem 3rem 1.1fr 1fr;gap:1.2rem;align-items:center;padding:2rem 0;border-top:1px solid var(--line)}.prin h3{font-size:clamp(1.8rem,3.5vw,2.6rem)}.prin svg{width:28px;height:28px;stroke:var(--accent);fill:none;stroke-width:1.8}.prin p{margin:0;color:var(--muted)}.prin .mono{color:var(--muted)}
+@media (max-width:860px){.ab{grid-template-columns:1fr;gap:2rem}.prin>div{grid-template-columns:2rem 2rem 1fr}.prin p{grid-column:1/-1}}
+footer{max-width:1120px;margin:auto;padding:2rem 1.5rem 3rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted)}
+footer div{display:flex;gap:1.2rem;flex-wrap:wrap}
+.rv{opacity:0;transform:translateY(34px);filter:blur(6px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1),filter .8s;transition-delay:calc(var(--d,0)*90ms)}
+.rv.on{opacity:1;transform:none;filter:none}.card.rv.on{transition:transform .25s ease-out,opacity .3s;transition-delay:0s}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:1.5rem}.logo,.tog{display:none}.post{grid-template-columns:1fr}.post .r{text-align:left}main{padding-top:6.5rem}}
+
+
+.stage{margin:3rem 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative;background:#050912}
+.stage svg{display:block;width:100%;height:auto;max-height:520px}
+.stage figcaption{position:absolute;left:1.5rem;bottom:1.2rem;color:#c9d3e6;text-transform:none;letter-spacing:.04em;display:flex;gap:.6rem;align-items:center}
+.stage figcaption b{color:var(--accent);font-weight:500}
+.tkh{margin-top:6rem}.tkh .mono{color:var(--muted)}.tkh h2{font-size:clamp(2.4rem,6vw,4.4rem);margin-top:.6rem;padding-bottom:1.5rem;border-bottom:1px solid var(--line)}.tkh h2 i{font-style:normal;color:var(--accent)}
+.tk{border-bottom:1px solid var(--line)}
+.tkb{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:3rem 1fr auto;gap:1.2rem;align-items:center;width:100%;padding:2rem 0}
+.tkb:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+.tkb .n{color:var(--muted);align-self:start;padding-top:.6rem}
+.tkb .k{color:var(--muted);display:block;margin-bottom:.4rem}
+.tkb h3{font-size:clamp(1.8rem,4vw,2.8rem)}
+.tkb p{margin:.6rem 0 0;color:var(--muted);max-width:44rem;font-size:.98rem}
+.tkb .m{display:flex;align-items:center;gap:1rem;color:var(--muted)}
+.tkb .m svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;transition:transform .3s}
+.tk.open .tkb .m svg{transform:rotate(180deg);color:var(--accent)}
+.tkd{display:none;grid-template-columns:3rem 1fr 1fr 1fr;gap:1.2rem;padding:0 0 2rem}
+.tk.open .tkd{display:grid}
+.tkd>div:first-child{grid-column:1}
+.tkd .c{grid-column:auto;border-left:1px solid var(--line);padding-left:1rem}
+.tkd .c .mono{color:var(--accent);display:block;margin-bottom:.5rem}
+.tkd .c p,.tkd .c li{margin:0;color:var(--muted);font-size:.92rem}.tkd ul{margin:0;padding-left:1rem}
+.fnote{color:var(--muted);text-transform:none;letter-spacing:.03em;font-size:.82rem;margin:1.6rem 0 0;opacity:.95}
+.eq{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start;margin-top:6rem;padding-top:4rem;border-top:1px solid var(--line)}
+.eq h2{font-size:clamp(2.6rem,6vw,4.6rem)}.eq h2 span{color:var(--accent)}
+.eq .lede{margin:1.5rem 0 1.5rem;text-align:left;max-width:28rem}
+.live{display:flex;align-items:center;gap:.6rem;color:var(--muted);text-transform:none;letter-spacing:.04em}.live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.sform{display:grid;gap:1.1rem}
+.sform .r2{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem}
+.sform label{display:grid;gap:.45rem;color:var(--ink);font-size:.82rem;font-family:"JetBrains Mono",monospace}
+.sform input,.sform textarea{width:100%;font:400 .9rem "JetBrains Mono",monospace;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem}
+.sform textarea{min-height:150px;resize:vertical}
+.sform input::placeholder,.sform textarea::placeholder{color:var(--muted);opacity:.8}
+.sform input:focus,.sform textarea:focus{outline:none;border-color:var(--accent)}
+.sform .btn{justify-self:start;cursor:pointer;font:inherit;font-weight:500;display:inline-flex;gap:.8rem;align-items:center}
+.sform small{color:var(--muted);text-transform:none;letter-spacing:.03em;font-size:.78rem}
+.sform .err{color:#ff8a8a;font-size:.8rem;min-height:1.1em}
+@media (max-width:860px){.eq{grid-template-columns:1fr;gap:2rem}.sform .r2{grid-template-columns:1fr}.tkb{grid-template-columns:2rem 1fr}.tkb .m{grid-column:2}.tkd{grid-template-columns:1fr}.tkd>div:first-child{display:none}.tkd .c{margin-left:0}}
+
+@media (prefers-reduced-motion:reduce){.ch>b,.step{animation:none;transform:none;opacity:1}.rv{opacity:1;transform:none;filter:none;transition:none}.aurora i,.mq>div,.art svg,.hero .dot,.step::before{animation:none}.curtain{display:none}}
+</style>
+</head>
+<body>
+<div class="gridbg" aria-hidden="true"></div><div class="aurora" aria-hidden="true"><i></i><i></i></div><canvas id="bg" aria-hidden="true"></canvas><div class="spot" id="spot" aria-hidden="true"></div><div class="curtain" id="curtain" aria-hidden="true"></div>
+<a class="logo" href="#intro">dd<b>_</b></a><button class="tog mono" id="tog" aria-label="Switch colour theme">Theme</button>
+<nav class="pn mono" id="nav" aria-label="Main"></nav>
+<main id="main" tabindex="-1"></main>
+<footer><span>© 2026 Divyansh Dhiman</span><div id="fl"></div></footer>
+<script>
+/* EDIT HERE: all content lives in D. Items marked sample should be replaced with real content. */
+const D={
+ email:"hello@example.com",linkedin:"https://www.linkedin.com/in/divyanshdhimanofficial/",
+ into:["EdTech & skilling","Women empowerment","Viksit Bharat"],
+ around:["EdTech","Industrial machinery","IT services","Skilling","Women empowerment","Viksit Bharat"],
+ ventures:[
+  {id:"modivs",n:"modivs-education",tag:"Teach. Earn. Repeat.",d:"An EdTech platform connecting students with qualified tutors, and a helping hand for women who want to earn but can’t take a job outside their homes.",tags:["EdTech","Firebase","Vercel"],
+   icon:'<path d="M8 8h18v18H8zM50 50h18V68H50zM17 26v24h33"/>',
+   flow:[["Tutors register","A tutor builds a full profile with photo, ID proof and qualification documents."],["Admin reviews","Every profile is checked and approved, or sent back with a clear reason such as a blurry photo."],["Students post a need","A student or parent answers one question at a time: subject, class, location and start date."],["Leads reach tutors","Matching leads appear on tutor dashboards. Tutors use credits to unlock a lead, and free leads run daily."],["Learning begins","Tutor and family connect, run a free demo class and start."]]},
+  {id:"bizbein",n:"bizbein-innovations",tag:"Machinery that moves.",d:"E-commerce and D2C industrial machinery: packaging machinery, material handling, conveyors and industrial automation, with a path for young blue-collar talent to learn a skilled trade.",tags:["Industrial","E-commerce","D2C"],
+   icon:'<path d="M10 28V10h18M48 10h18v18M66 48v18H48M28 66H10V48M20 38h36"/>',
+   flow:[["Browse the range","Buyers explore packaging, conveyor, material handling and automation equipment online."],["Share the need","They describe what they want to move, pack or automate."],["Get a fit","The team recommends the right machine and quotes directly, with no middlemen."],["Delivery and setup","The machine is delivered and installed on site."],["Skill the team","Young technicians train to run and maintain it, building a skilled-trade career."]]}
+ ],
+ posts:[["Social entrepreneurship","Impact","Sep 18, 2026","6 min read","In praise of purpose beyond profit","A business that serves the people around it is also the one that lasts. A few thoughts on building ventures that create skills, jobs and dignity."],["Skilling","Viksit Bharat","Sep 04, 2026","8 min read","Skilling is the real infrastructure","Roads and factories matter, but so does a person who can earn. Why skills compound in ways that physical infrastructure cannot."],["Women empowerment","EdTech","Aug 21, 2026","7 min read","Designing work for women who can’t leave home","Millions of women want to earn but cannot take a job outside their homes. How a work-from-home model turns spare hours into dignified income."],["Training","Mentorship","Aug 07, 2026","5 min read","The dignity of a first chance","Every professional was once a beginner nobody wanted to hire. Why live projects and a visible path to a job matter more than credentials alone."]],
+ about:["I’m Divyansh, a social entrepreneur building ventures that create skills, jobs and dignity for India’s women and youth.","I believe growth comes from solving real problems, building strong systems, and creating long-term value beyond profit.","My work spans EdTech, industrial machinery and IT services, and keeps coming back to one question: who gets left out, and what would it take to bring them in?"]
+};
+Object.assign(D.ventures[0],{k:"EdTech",lab:"Scaling across India",line:"Skills. Jobs. Dignity.",url:"https://www.modivians.com",tags:["EdTech","Online tuition","Women empowerment"],code:`venture: "Modiv's Education"
+sector: "EdTech / Online tuition"
+model: "Work-from-home for women"
+impact:
+  women_enabled: "4,500+"
+  classes: "Class 1 to 12"
+  mission: "Earn with dignity"`});
+Object.assign(D.ventures[1],{k:"Industrial",lab:"Active operations",line:"Machinery that moves industry forward.",url:"https://bizbein.com",tags:["D2C","Industrial machinery","Skilled trades"],code:`venture: "BizBein Innovations"
+sector: "D2C industrial machinery"
+products:
+  - packaging machinery
+  - material handling
+  - conveyors
+  - industrial automation
+talent: "Skilled trades for youth"`});
+D.ventures.push({n:"bizbein-infotech",k:"IT Services",lab:"Growing team",tag:"Code, training, first chance.",line:"Code, training, and a first chance.",d:"IT services, web and app development, and social media management — with free training, live projects, and jobs for young people who perform.",tags:["IT services","Web & app dev","Training"],icon:'<path d="M26 22L10 38l16 16M50 22l16 16-16 16M44 12L32 64"/>',code:`venture: "BizBein Infotech"
+sector: "IT services & development"
+offers:
+  - web & app development
+  - social media management
+  - free training + live projects
+outcome: "Jobs for those who perform"`,flow:[["Free training","Young people learn the skills of the trade at no cost."],["Live projects","They work on real client projects such as websites, apps and social media."],["Prove it","Performance on live work shows who is ready."],["Get hired","Those who perform are offered jobs on the team."]]});
+const $=s=>document.querySelector(s),main=$("#main"),nav=$("#nav"),sp=$("#spot"),cu=$("#curtain");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pages=["intro","writing","projects","speaking","about","connect"],lab={intro:"Intro",writing:"Writing",projects:"Projects",speaking:"Speaking",about:"About",connect:"Connect"};
+let io,RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const split=(s,o)=>[...s].map((c,i)=>`<span class="ch"><b style="--i:${o+i}">${c}</b></span>`).join("");
+const sh=(n,t,l)=>`<div class="sh"><span class="mono">${n}</span><h2>${t}</h2>${l?`<a class="mono lk" href="#${l[0]}">${l[1]}</a>`:""}</div>`;
+const tags=a=>`<div class="tags">${a.map(t=>`<span>${esc(t)}</span>`).join("")}</div>`;
+const venture=(v,i)=>`<article class="card"><div class="art"><svg viewBox="0 0 76 76" aria-hidden="true">${v.icon}</svg><span class="mono">${esc(v.tag)}</span></div><div class="cb"><span class="mono" style="color:var(--muted)">0${i+1} / Venture</span><h3>${esc(v.n)}<b>_</b></h3><p>${esc(v.d)}</p>${tags(v.tags)}<button class="how" aria-expanded="false">How it works</button><div class="flow">${v.flow.map((s,j)=>`<div class="step" data-n="${j+1}" style="--i:${j}"><div><b>${esc(s[0])}</b><span>${esc(s[1])}</span></div></div>`).join("")}</div></div></article>`;
+const post=(p,i)=>`<article class="post"><span class="mono">0${i+1}</span><div><div class="tags">${tags([p[0],p[1]]).replace(/<\/?div[^>]*>/g,"")}</div><h3>${esc(p[4])}</h3><p>${esc(p[5])}</p></div><div class="r mono">${esc(p[2])}<br>${esc(p[3])}</div></article>`;
+const mq=()=>{const h=D.around.map(x=>`<span>${esc(x)}</span>`).join("");return `<div class="mq" aria-hidden="true"><div>${h}${h}</div></div>`};
+const nlbox=()=>`<div class="nl"><div class="ic">&gt;_</div><span class="mono" style="color:var(--muted)">Stay in touch</span><h2>Let’s connect.<span>No forms. Just people.</span></h2><p class="lede" style="margin:0">Follow the work on LinkedIn, or write to me directly about ventures, skilling, or a conversation worth having.</p><div class="btns"><a class="btn" href="${esc(D.linkedin)}" target="_blank" rel="noopener">Connect on LinkedIn ↗</a><a class="btn alt" href="mailto:${esc(D.email)}?subject=Hello%20Divyansh">Email me</a></div><small class="mono" style="color:var(--muted);text-transform:none;letter-spacing:.04em">I read every message and reply personally.</small></div>`;
+const views={
+ intro:()=>`<section class="hero"><span class="mono">Social entrepreneur &amp; builder of ventures</span><h1 aria-label="Divyansh Dhiman"><span aria-hidden="true">${split("Divyansh",0)}</span><span aria-hidden="true">${split("Dhiman",8)}<i class="dot"></i></span></h1><p class="lede">Building ventures with purpose across EdTech, industrial machinery and IT services.</p><div class="btns"><a class="btn" href="#projects">Explore my ventures</a><a class="btn alt" href="#writing">Read my thoughts</a></div><div class="side"><div><span class="mono">Connect</span><ul><li><a href="${esc(D.linkedin)}" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="mailto:${esc(D.email)}">Let’s talk</a></li></ul></div><div><span class="mono">Currently into</span><ul>${D.into.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div></div></section>
+ <section class="sec">${sh("01 / The approach","Purpose-driven ventures.")}<div class="two"><h3><em>Lasting impact.</em></h3><div><p>${esc(D.about[0])}</p><p>${esc(D.about[1])}</p><div class="code"><small>// the short version</small>while (problem) { build(); serve(); }</div><a class="mono lk" href="#about">A little more about me</a></div></div>${mq()}</section>
+ <section class="sec">${sh("02 / Currently building","Less talk. More ventures.",["projects","All projects"])}<div class="grid">${D.ventures.map(venture).join("")}</div></section>
+ <section class="sec">${sh("03 / Field notes","Thinking out loud.",["writing","All writing"])}${D.posts.slice(0,3).map(post).join("")}</section>
+ <section class="sec cta"><h2>Have a problem worth solving?</h2><div class="btns"><a class="btn" href="mailto:${esc(D.email)}">Let’s talk</a><a class="btn alt" href="${esc(D.linkedin)}" target="_blank" rel="noopener">Connect on LinkedIn</a></div></section>`,
+ writing:()=>`<div class="wh"><div class="top mono"><span>01 / Field notes</span><a class="lk" href="#intro">← Back to intro</a></div><h1 class="wt">Thinking out loud.<span>One note at a time.</span></h1><p class="lede" style="margin:1.5rem 0 0;text-align:left">Lessons from the ventures. Things I’ve built, learned, and written down so the next person doesn’t have to start from zero.</p></div><div class="sr"><input id="q" type="search" placeholder="Search notes, ideas, and topics…" aria-label="Search notes"></div><div class="chips" id="chips"></div><p class="mono cnt" id="cnt"></p><div id="plist"></div>${nlbox()}`,
+ projects:()=>`<div class="wh"><div class="top mono"><span>02 / The ventures</span><a class="lk" href="#intro">← Back to intro</a></div><h1 class="wt">The ventures.<span>Always in progress.</span></h1><p class="lede" style="margin:1.5rem 0 0;text-align:left">EdTech, industrial machinery, and IT services — each built to solve a real problem, serve real people, and create lasting value.</p></div><div class="topbar"><div class="chips" id="vchips"></div><span class="mono cnt2" id="vcnt"></span></div><div id="vlist"></div><div class="conv"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="8" r="2"/><path d="M6 7v11M18 10c0 5-8 3-12 8"/></svg><div><h3>A venture is a conversation.</h3><p>Read the work, question a decision, or share a better approach. That’s how good ventures get better.</p></div><a class="mono lk" href="${esc(D.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a></div><p class="mono note">Venture details shown here are portfolio highlights. Website links open the official venture pages.</p>`,
+ speaking:()=>{
+ const stage=`<figure class="stage"><svg viewBox="0 0 1200 460" role="img" aria-label="Illustration of a speaker at a lectern on a lit stage facing an audience"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16233f"/><stop offset="1" stop-color="#050912"/></linearGradient><radialGradient id="sl" cx=".5" cy="0" r=".9"><stop offset="0" stop-color="#34d9a3" stop-opacity=".28"/><stop offset="1" stop-color="#34d9a3" stop-opacity="0"/></radialGradient></defs><rect width="1200" height="460" fill="url(#sg)"/><rect x="170" y="70" width="560" height="250" rx="4" fill="#0f1b33" stroke="#24365c"/><g fill="#e8eefb">${Array.from({length:9},(_,i)=>`<circle cx="${210+i*95}" cy="40" r="6"/>`).join("")}</g><path d="M300 46L220 330h260zM520 46l-80 284h260z" fill="url(#sl)"/><rect x="0" y="330" width="1200" height="130" fill="#070c18"/><rect x="560" y="236" width="86" height="100" fill="#2b3957"/><circle cx="603" cy="176" r="19" fill="#cfd6e4"/><path d="M572 236q0-48 31-48t31 48z" fill="#34d9a3" opacity=".9"/><g fill="#0b1325">${Array.from({length:14},(_,i)=>`<circle cx="${60+i*84}" cy="${400+(i%2)*22}" r="20"/>`).join("")}</g></svg><figcaption class="mono"><b>●</b> Social entrepreneurship / Skilling</figcaption></figure>`;
+ const T=[["Conference talk","Building ventures with purpose beyond profit","35 min","Why a business that serves the people around it is also the one that lasts, and how to design ventures that create skills, jobs and dignity.","Founders, students, and community and policy leaders","Purpose as a design constraint; how to pick problems worth solving; what to measure besides revenue","Keynote with Q&amp;A"],["Deep-dive session","Skilling India’s women and youth","40 min","A practical look at how live-project learning, free training, and work-from-home models can turn ambition into income.","Educators, NGOs, skilling bodies and employers","How live projects replace theory; models that let women earn from home; where skilling programmes usually break","Case-study walkthrough with discussion"],["Practical workshop","From classroom to career","60 min","A hands-on session on building live-project learning pipelines that take a curious beginner to a confident, employable professional.","College teams, training providers and early-stage founders","A pipeline you can copy: train, project, prove, hire; common mistakes; how to start small","Interactive workshop; bring a real problem"]];
+ const chev='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>',clk='<svg viewBox="0 0 24 24" aria-hidden="true" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+ const talks=T.map((t,i)=>`<article class="tk"><button class="tkb" aria-expanded="false" aria-controls="tkd${i}"><span class="mono n">0${i+1}</span><span><span class="mono k">${t[0]}</span><h3>${t[1]}</h3><p>${t[3]}</p></span><span class="m mono">${clk}${t[2]}${chev}</span></button><div class="tkd" id="tkd${i}"><div></div><div class="c"><span class="mono">Who it’s for</span><p>${t[4]}</p></div><div class="c"><span class="mono">Takeaways</span><p>${t[5]}</p></div><div class="c"><span class="mono">Format</span><p>${t[6]}</p></div></div></article>`).join("");
+ return `<div class="wh"><div class="top mono"><span>03 / Beyond the keyboard</span><a class="lk" href="#intro">← Back to intro</a></div><h1 class="wt">Ideas are better<span>when shared.</span></h1><p class="lede" style="margin:1.5rem 0 0;text-align:left">Talks, workshops, and conversations for people who want to build ventures with purpose—not just chase a trend.</p></div>${stage}
+<section class="tkh"><span class="mono">Talks &amp; session outlines</span><h2>A few things worth discussing<i>.</i></h2></section><div>${talks}</div><p class="mono fnote">Proposed session topics and outlines. Conference dates and recordings can be added when confirmed.</p>
+<section class="eq" id="enquire"><div><span class="mono" style="color:var(--muted)">Let’s start a conversation</span><h2 style="margin-top:.8rem">Have a room full of curious minds<span>?</span></h2><p class="lede">I’m open to conferences, community meetups, and hands-on workshops. Tell me a little about your event and the people you’re bringing together.</p><span class="mono live">Open to speaking enquiries</span></div>
+<form class="sform" id="sform" novalidate><div class="r2"><label>Your name<input id="sn" name="name" placeholder="Alex Morgan" autocomplete="name" required></label><label>Email address<input id="se" name="email" type="email" placeholder="you@company.com" autocomplete="email" required></label></div><label>Event or organization<input id="so" name="org" placeholder="Conference, meetup, or team"></label><label>A little about your event<textarea id="sm" name="msg" placeholder="The audience, topics, format, and dates you have in mind…"></textarea></label><div class="err" id="serr" role="alert"></div><button class="btn" type="submit">Let’s talk <span aria-hidden="true">↗</span></button><small class="mono">Sending opens your email app with this enquiry ready to send to Divyansh.</small></form></section>`},
+ about:()=>sh("About","A little more about me.")+`<div class="two"><div class="prose">${D.about.map(p=>`<p>${esc(p)}</p>`).join("")}</div><div><span class="mono" style="color:var(--muted)">What I build around</span><div class="tags" style="margin:.8rem 0 1.5rem">${D.around.map(t=>`<span>${esc(t)}</span>`).join("")}</div><div class="btns" style="justify-content:flex-start"><a class="btn" href="mailto:${esc(D.email)}">Let’s talk</a><a class="btn alt" href="${esc(D.linkedin)}" target="_blank" rel="noopener">LinkedIn</a></div></div></div>${mq()}`,
+ connect:nlbox
+};
+views.about=()=>{
+ const ic=[`<path d="M5 7l5 5-5 5M12 18h7"/>`,`<circle cx="6" cy="5" r="2"/><circle cx="18" cy="8" r="2"/><path d="M6 7v11M18 10c0 5-8 3-12 8"/>`,`<path d="M12 6c-2-2-5-2-8-2v14c3 0 6 0 8 2 2-2 5-2 8-2V4c-3 0-6 0-8 2zM12 6v14"/>`];
+ const pr=[["Purpose before profit.","Solve a real problem for real people. Build what the mission needs, not what the trend demands."],["Serve the people around you.","Design for the women and youth left out. Create skills, jobs, and dignity wherever the venture reaches."],["Stay close to the ground.","Ask the obvious question. Meet the people you serve. There is always a deeper need worth looking for."]];
+ return `<div class="wh"><div class="top mono"><span>04 / A little about me</span><a class="lk" href="#intro">← Back to intro</a></div><h1 class="wt">Entrepreneur by trade.<span>Curious by default.</span></h1><p class="lede" style="margin:1.5rem 0 0;text-align:left">Behind every venture is a person. Here’s a little about what I care about, why I build, and what keeps me asking questions.</p></div>
+<section class="ab"><figure class="fig"><svg viewBox="0 0 400 500" role="img" aria-label="Illustration of a laptop showing a chart on a desk beside a lamp"><defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2740"/><stop offset="1" stop-color="#0d1426"/></linearGradient></defs><rect width="400" height="500" fill="url(#g1)"/><path d="M70 40q70-30 110 20" stroke="#6b7a99" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M165 52l40 40-50 20z" fill="#7d8aa6"/><rect x="60" y="360" width="300" height="140" fill="#cfd6e4"/><path d="M110 360l20-150h190l20 150z" fill="#2b3957"/><rect x="132" y="224" width="166" height="120" fill="#e9eef7"/><g fill="#34d9a3"><rect x="152" y="300" width="14" height="30"/><rect x="176" y="276" width="14" height="54"/><rect x="200" y="288" width="14" height="42"/><rect x="224" y="256" width="14" height="74"/></g><circle cx="268" cy="290" r="22" fill="#5b6dff"/><rect x="300" y="340" width="40" height="32" rx="6" fill="#e9eef7"/><path d="M340 350q16 6 0 18" stroke="#e9eef7" stroke-width="5" fill="none"/></svg><figcaption class="mono"><span>Divyansh Dhiman</span><span>Usually thinking about ventures.</span></figcaption></figure><div class="abt"><span class="mono">The human behind the ventures</span><h2>Hi, I’m Divyansh<span style="color:var(--accent)">.</span></h2><p class="big">A social entrepreneur who cares as much about the people served as the ventures built.</p><p>My work lives at the intersection of education, industry, and opportunity: ventures that teach skills, create jobs, and give women and youth a way to earn with dignity. I like systems that are simple to explain, hard to break, and kind to the people they serve.</p><p>This website is my workbench in public. A place for the ideas that made it out of a notebook, the ventures that taught me something, and the conversations that deserve to keep going.</p><p>Building forces me to make an idea real. Serving keeps me honest. Speaking reminds me that business is, ultimately, a very human endeavor.</p><a class="mono lk" href="mailto:${esc(D.email)}">Say hello ↗</a></div></section>
+<section class="sec"><span class="mono" style="color:var(--muted)">A few things I come back to</span><h2 class="hw">How I like to work.</h2><div class="prin">${pr.map((p,i)=>`<div><span class="mono">0${i+1}</span><svg viewBox="0 0 24 24" aria-hidden="true">${ic[i]}</svg><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join("")}</div></section>${nlbox()}`};
+let vf="All";
+const vrow=(v,i)=>`<article class="vr"><div class="vl"><span class="mono">0${i+1} / ${esc(v.lab)}</span><h2 class="vt">${esc(v.n)}<b>_</b></h2><p class="vline">${esc(v.line)}</p><p>${esc(v.d)}</p>${tags(v.tags)}<div class="vact"><button class="how" aria-expanded="false">How it works</button>${v.url?`<a class="mono lk" href="${esc(v.url)}" target="_blank" rel="noopener">Visit website ↗</a>`:""}</div><div class="flow">${v.flow.map((s,j)=>`<div class="step" data-n="${j+1}" style="--i:${j}"><div><b>${esc(s[0])}</b><span>${esc(s[1])}</span></div></div>`).join("")}</div></div><div class="code2"><div class="cbar"><span class="dots"><i></i><i></i><i></i></span><span class="mono">${esc(v.n)} / quick look</span><button class="cp mono" data-c="${encodeURIComponent(v.code)}">Copy</button></div><div class="cbody">${v.code.split("\n").map((l,j)=>`<div class="ln"><i>${j+1}</i><span>${esc(l)}</span></div>`).join("")}</div></div></article>`;
+function vfill(){
+ const l=$("#vlist");if(!l)return;
+ $("#vchips").innerHTML=["All","EdTech","Industrial","IT Services"].map(t=>`<button class="chip vc" data-v="${t}" aria-pressed="${t===vf}">${t}</button>`).join("");
+ const m=D.ventures.filter(v=>vf==="All"||v.k===vf);
+ $("#vcnt").textContent=`${m.length} venture${m.length===1?"":"s"} / Built with purpose`;
+ l.innerHTML=m.map(vrow).join("");
+}
+let topic="All",qs="";
+function wfill(){
+ const l=$("#plist");if(!l)return;
+ $("#chips").innerHTML=["All","Social entrepreneurship","Impact","Skilling","Viksit Bharat","Women empowerment"].map(t=>`<button class="chip" data-t="${esc(t)}" aria-pressed="${t===topic}">${esc(t)}</button>`).join("");
+ const m=D.posts.filter(p=>(topic==="All"||p[0]===topic||p[1]===topic)&&p.join(" ").toLowerCase().includes(qs));
+ $("#cnt").textContent=`${m.length} note${m.length===1?"":"s"} / ${topic==="All"?"All topics":topic}`;
+ l.innerHTML=m.length?m.map(post).join(""):'<p class="lede" style="text-align:left;margin-top:2rem">No notes match yet. Try another topic.</p>';
+}
+$("#fl").innerHTML=pages.map(p=>`<a href="#${p}">${lab[p]}</a>`).join("");
+const tilt=c=>{c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.transform=`perspective(900px) rotateX(${(.5-y)*6}deg) rotateY(${(x-.5)*8}deg)`;c.style.setProperty("--gx",x*100+"%");c.style.setProperty("--gy",y*100+"%")});c.addEventListener("pointerleave",()=>c.style.transform="")};
+const magnet=b=>{b.addEventListener("pointermove",e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.3}px)`});b.addEventListener("pointerleave",()=>b.style.transform="")};
+function fx(){
+ if(RM)return;io&&io.disconnect();
+ io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}}),{threshold:.1});
+ main.querySelectorAll(".sh,.lede,.btns,.two>*,.card,.post,.mq,.nl>*,.cta h2,.wh>*,.sr,.vr,.topbar,.conv,.ab>*,.prin>div,.stage,.tkh,.tk,.fnote,.eq>*").forEach((el,i)=>{el.classList.add("rv");el.style.setProperty("--d",i%5);io.observe(el)});
+ main.querySelectorAll(".card").forEach(tilt);main.querySelectorAll(".btn").forEach(magnet);
+}
+function route(){
+ let h=(location.hash||"#intro").slice(1);if(h==="newsletter")h="connect";if(!pages.includes(h))h="intro";
+ main.innerHTML=views[h]();wfill();vfill();
+ nav.innerHTML=pages.map(p=>`<a href="#${p}"${p===h?' aria-current="page"':""}>${lab[p]}</a>`).join("");
+ document.title=(h==="intro"?"":lab[h]+" – ")+"Divyansh Dhiman";scrollTo(0,0);fx();
+}
+main.addEventListener("click",e=>{
+ const cp=e.target.closest(".cp");if(cp){const t0=decodeURIComponent(cp.dataset.c);navigator.clipboard&&navigator.clipboard.writeText(t0).then(()=>{cp.textContent="Copied";setTimeout(()=>cp.textContent="Copy",1500)}).catch(()=>{});return}
+ const tb=e.target.closest(".tkb");if(tb){const a=tb.closest(".tk"),o=a.classList.toggle("open");tb.setAttribute("aria-expanded",o);return}
+ const vc=e.target.closest(".vc");if(vc){vf=vc.dataset.v;vfill();return}
+ const t=e.target.closest(".chip");if(t){topic=t.dataset.t;wfill();return}const h=e.target.closest(".how");if(h){const c=h.closest(".card,.vr"),o=c.classList.toggle("open");h.setAttribute("aria-expanded",o);h.textContent=o?"Hide steps":"How it works";return}
+});
+main.addEventListener("submit",e=>{if(e.target.id!=="sform")return;e.preventDefault();
+ const n=$("#sn").value.trim(),m=$("#se").value.trim(),er=$("#serr");
+ if(!n||!/^\S+@\S+\.\S+$/.test(m)){er.textContent="Please add your name and a valid email address.";return}
+ er.textContent="";
+ const b=`Name: ${n}\nEmail: ${m}\nEvent/organization: ${$("#so").value.trim()}\n\n${$("#sm").value.trim()}`;
+ location.href=`mailto:${D.email}?subject=${encodeURIComponent("Speaking enquiry"+($("#so").value.trim()?" – "+$("#so").value.trim():""))}&body=${encodeURIComponent(b)}`});
+main.addEventListener("input",e=>{if(e.target.id==="q"){qs=e.target.value.toLowerCase();wfill()}});
+$("#tog").addEventListener("click",()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--ai").trim()==="#06231a";r.setAttribute("data-theme",d?"light":"dark")});
+/* animated network background */
+const cv=$("#bg"),g=cv.getContext("2d");let W,H,P=[],mx=-999,my=-999,rgb="52,217,163",fr=0;
+function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;P=Array.from({length:Math.min(110,Math.floor(W*H/14000))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4}))}
+function draw(){
+ if(fr++%40===0)rgb=getComputedStyle(document.documentElement).getPropertyValue("--rgb").trim()||rgb;
+ g.clearRect(0,0,W,H);
+ for(const p of P){if(!RM){p.x+=p.vx;p.y+=p.vy;const dx=p.x-mx,dy=p.y-my,d=Math.hypot(dx,dy);if(d<150){p.x+=dx/d*1.6;p.y+=dy/d*1.6}if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0}
+  g.fillStyle=`rgba(${rgb},.7)`;g.beginPath();g.arc(p.x,p.y,1.7,0,6.283);g.fill()}
+ for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){const d=Math.hypot(P[i].x-P[j].x,P[i].y-P[j].y);if(d<130){g.strokeStyle=`rgba(${rgb},${(1-d/130)*.35})`;g.beginPath();g.moveTo(P[i].x,P[i].y);g.lineTo(P[j].x,P[j].y);g.stroke()}}
+ for(const p of P){const d=Math.hypot(p.x-mx,p.y-my);if(d<170){g.strokeStyle=`rgba(${rgb},${(1-d/170)*.7})`;g.beginPath();g.moveTo(p.x,p.y);g.lineTo(mx,my);g.stroke()}}
+ if(!RM)requestAnimationFrame(draw);
+}
+size();draw();addEventListener("resize",()=>{size();RM&&draw()});
+
+if(!RM&&matchMedia("(pointer:fine)").matches){
+ addEventListener("pointermove",e=>{mx=e.clientX;my=e.clientY;sp.style.setProperty("--mx",mx+"px");sp.style.setProperty("--my",my+"px")});
+ 
+}
+addEventListener("hashchange",()=>{if(RM){route();return}cu.className="curtain in";setTimeout(()=>{route();cu.className="curtain out";setTimeout(()=>cu.className="curtain",380)},260)});
+route();
+</script>
+</body>
+</html>
